@@ -1,24 +1,24 @@
 # Deep_VoiceChanger  
 深層学習とかを使って、ボイスチェンジャー作るリポジトリ。  
-A repository to make voice changer using deep learning.  
+A repository for a voice changer project using deep learning.  
 
 たぶん沢山の人が、仮想世界の自分の声を欲しがっていると思います。  
 ここではそんな人を対象に、高品質なボイスチェンジャーを作ります。  
 まだ開発途上なので、いい結果ができ次第更新します。  
-I think many people wants to get own voise that use in virtual world.  
-In here, we make a great voice changer amed to those people.  
-This is now developing, so I will update when I got good result.  
+I think many people want to get their own custom voice to use in virtual world.  
+In here, we are making a great voice changer aimed to help those people.  
+This is now in development, I will update this repository when I get a good result.  
 
 ゆるーく作ってるので、何かあればゆるーく言ってください。  
 英語が間違ってたら早めに教えてください。  
-I'm doing this loosely, so please tell me loosely if you find something.  
-Tell me early if you find wrong English, please.  
+I'm doing this as a side-project, so please feel free to tell me if you find something.  
+PLease tell me if you find mistakes in my English.  
 
 ## Overview  
 技術的には、CycleGANを用いて2人の声を入れ替える機械学習をしています。  
 Aさんの話した内容を、Bさんの声で聴くことができるようになります。  
-This code use 'CycleGAN' to replace someone's voice to other's voice.  
-You can hear contents that A spoke in B's voice.  
+This code uses 'CycleGAN' to replace someone's voice with other's voice.  
+You can hear in the audios that person A's voice is converted into person B's voice.  
 
 ## Example  
 [元音声A (raw)](https://github.com/pstuvwx/Deep_VoiceChanger/blob/master/demo/a.wav)  
@@ -30,12 +30,12 @@ You can hear contents that A spoke in B's voice.
 [再変換B→A→B (reconverted B to A to B)](https://github.com/pstuvwx/Deep_VoiceChanger/blob/master/demo/bab.wav)  
 
 デモ音声は[キズナアイさん](https://youtu.be/CPvD2qz-rG4?&t=444)と[ねこますさん](https://youtu.be/lllCzDqlExo)です。  
-Example voices come from [キズナアイさん](https://youtu.be/CPvD2qz-rG4?&t=444) and [ねこますさん](https://youtu.be/lllCzDqlExo).  
+Example voices are taken from [キズナアイさん](https://youtu.be/CPvD2qz-rG4?&t=444) and [ねこますさん](https://youtu.be/lllCzDqlExo).  
 
 **音声に関する権利は、発話者およびその所属組織にあります。  
 権利者の規約に沿わない音声の利用は禁止されています。  
-The right of the voices is in the speaker and the affiliation organization.  
-It is prohibited to use voices that do not conform to the rules of the right holder.**  
+The right of the voices belong to the speaker and the affiliation organization.  
+It is prohibited to use voices that you don't have a legal right to use.**  
 
 ## Usage  
 `python trainer.py -v VOICE_A_FILE_PATH -w VOICE_B_FILE_PATH -s TEST_VOICE_A_FILE_PATH -u TEST_VOICE_B_FILE_PATH`  
